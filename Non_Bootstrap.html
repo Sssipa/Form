@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="password"] {
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .nama-container {
+        display: flex;
+        gap: 10px;
+      }
+      .nama-container input {
+        flex: 1;
+      }
+      .full-width {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Registration</h1>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="name">Nama </label></td>
+          <td>
+            <div class="nama-container">
+              <input type="text" placeholder="Nama Depan" />
+              <input type="text" placeholder="Nama Belakang" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td><input type="text" class="full-width" /></td>
+        </tr>
+        <tr>
+          <td><label for="tggl">Tanggal Lahir</label></td>
+          <td><input type="date" class="full-width" /></td>
+        </tr>
+        <tr>
+          <td><label for="jenis">Jenis Kelamin</label></td>
+          <td>
+            <input type="radio" id="laki" name="jenis_kelamin" value="L" />
+            <label for="laki">L</label>
+            <input type="radio" name="jenis_kelamin" id="perempuan" value="P" />
+            <label for="perempuan">P</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td><input type="text" class="full-width" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" class="full-width" /></td>
+        </tr>
+        <tr>
+          <td><label for="username">Konfirmasi Password</label></td>
+          <td><input type="password" class="full-width" /></td>
+        </tr>
+        <tr>
+          <td><label for="photo">Upload Foto</label></td>
+          <td>
+            <input type="file" id="photo" class="full-width" accept="image/*" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
